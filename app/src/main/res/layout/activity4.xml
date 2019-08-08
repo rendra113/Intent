@@ -1,0 +1,245 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/stick_btn_top">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basketball Match!"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/background_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/box1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team A"
+                        android:textColor="#266CF4"
+                        android:id="@+id/txt_first_team"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/score_first_team"
+                        android:textColor="#266CF4"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="30dp"
+                        android:textSize="75dp"/>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:background="@drawable/btn_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Team Name"
+                    android:id="@+id/btn_change"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:textColor="#266CF4"
+                    android:textStyle="bold"
+                    android:textSize="11dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center">
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#266CF4"
+                        android:id="@+id/first_score_one_point"
+                        android:textStyle="bold"
+                        android:text="+1 Point"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#266CF4"
+                        android:id="@+id/first_score_two_point"
+                        android:textStyle="bold"
+                        android:text="+2 Point"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:textColor="#266CF4"
+                        android:textStyle="bold"
+                        android:id="@+id/first_score_three_point"
+                        android:text="+3 Point"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/background_radius2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/box2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team B"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_second_team"
+                        android:textColor="#FA9917"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:id="@+id/score_second_team"
+                        android:textStyle="bold"
+                        android:textColor="#FA9917"
+                        android:layout_marginBottom="30dp"
+                        android:textSize="75dp"/>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:background="@drawable/btn_change2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Team Name"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_change2"
+                    android:textStyle="bold"
+                    android:textColor="#FA9917"
+                    android:layout_marginTop="35dp"
+                    android:textSize="11dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center">
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/second_score_one_point"
+                        android:textColor="#FA9917"
+                        android:text="+1 Point"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/second_score_two_point"
+                        android:textColor="#FA9917"
+                        android:text="+2 Point"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_point"
+                        android:textStyle="bold"
+                        android:id="@+id/second_score_three_point"
+                        android:textColor="#FA9917"
+                        android:text="+3 Point"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/move4"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stick_btn_bottom"
+            android:text="Move"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
